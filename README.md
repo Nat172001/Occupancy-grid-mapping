@@ -12,7 +12,10 @@ The publish_map method converts the internal occupancy grid representation into 
 **Saving the Occupancy Grid**
 The save_occupancy_grid function is called when a KeyboardInterrupt occurs (e.g., when the user stops the program). It converts the occupancy grid to a numpy array and saves it to a file (env11.npy). This allows for later analysis and use of the generated map.
 
-![](https://github.com/Nat172001/Occupancy-grid-mapping/blob/main/recordings/env1.gif)        ![](https://github.com/Nat172001/Occupancy-grid-mapping/blob/main/recordings/env3.gif)
+<p align="center">
+  <img src="https://github.com/Nat172001/Occupancy-grid-mapping/blob/main/recordings/env1.gif" width="400" />
+  <img src="https://github.com/Nat172001/Occupancy-grid-mapping/blob/main/recordings/env3.gif" width="400" />
+</p>
 
 Usage
 To use this script, ensure you have ROS 2 and the necessary dependencies installed. You can run the script using Python 3. The node will continuously update the occupancy grid based on the incoming sensor data and publish it as a ROS 2 message. When you stop the program (e.g., by pressing Ctrl+C), the current state of the occupancy grid is saved to a file for later use.
